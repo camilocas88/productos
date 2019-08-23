@@ -9,7 +9,7 @@
 }
 
 #header{
-    background: #DF282E;
+    background: rgb(34, 6, 7);
     color: white;
     margin: 0;
     height: 90px;
@@ -29,7 +29,7 @@
     height: 30px;
 
 
-    background:rgba(224, 49, 55, 0.67);
+    background:rgba(19, 4, 5, 0.67);
     ul{
         margin: 0;
         list-style: none;
@@ -47,7 +47,7 @@
 
                 &:hover{
                     text-decoration: none;
-                    background: #DF282E;
+                    background: rgb(0, 0, 0);
                 }
             }
         }
@@ -56,7 +56,7 @@
 
 .activado{
     text-decoration: none !important;
-    border-bottom: 4px solid yellow !important;
+    border-bottom: 4px solid white !important;
 }
 
 

@@ -42,6 +42,10 @@ export class ProductoService{
           return this._http.post(this.url + "update-producto/"+ id, params, {headers});
     }
 
+    deleteProduct(id){
+        return this._http.get(this.url+'delete-producto/'+id)
+    }
+
     makeFileRequest(url: string, params: Array<string>, files: Array<File>){
         return new Promise((resolve, reject)=>{
             var formData: any = new FormData();

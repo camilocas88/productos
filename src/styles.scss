@@ -6,3 +6,30 @@
     display: block;
     object-fit: cover;
 }
+
+.title{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+}
+
+.btn-primary{
+    background: black;
+    border-color: black;
+
+    &:hover{
+        background: white;
+        border-color: black;
+        color: black
+    }
+}
+
+.btn-success{
+    background: gray !important;
+    border-color: gray !important;
+    &:hover{
+        background: white !important;
+        border-color: black !important;
+        color: black !important
+    }
+}
