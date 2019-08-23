@@ -1,0 +1,31 @@
+<h2>{{titulo}}</h2>
+<hr>
+
+<div *ngIf="!productos">
+    CARGANDO LISTADO DE PRODUCTOS...
+</div>
+
+<div *ngIf="productos">
+    <div class="row">
+        <div class="border-dark my-2 border  col-lg-3" *ngFor="let producto of productos">
+            <div class="thumbail">
+                <div *ngIf="producto.imagen" class="imagen_container">
+                    <img class="producto_imagen" src="http://localhost:8080/cursoanglar-backend/uploads/{{producto.imagen}}" >
+                </div>
+                <div *ngIf="!producto.imagen">
+                    <div class="img_relleno"></div>
+                </div>
+                <div class="caption">
+                    <h3>{{producto.nombre}}</h3>
+                    <p>$ {{producto.precio}} </p>
+                    <p class="text-center">
+                        <a routerLink="/producto/{{producto.id}}" class="btn btn-sm btn-outline-dark mx-1">Ver</a>
+                        <a routerLink="/editar-producto/{{producto.id}}" class=" mx-1 btn btn-outline-dark btn-sm  mx-1">Editar</a>
+                        <a href="#" class="btn btn-outline-dark btn-sm ">Eliminar</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
